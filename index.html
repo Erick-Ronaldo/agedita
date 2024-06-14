@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="estilo.css">
+
+		<title>AGENDA PERSONAL</title>
+		
+
+
+	
+	</head>
+
+
+	
+<body> 
+
+<div class="form">
+
+
+	<form action="buscar.php" method="get">
+				<p align="center">AGENDA PERSONAL</p>
+				<label for="buscar">Busqueda</label>
+				<br>
+				<input type="text" name="busqueda"> 
+				<br>
+				<br>
+				<input type="submit" name="enviar" value="Buscar">
+			</form>
+
+<form action="todo.php" method="get">
+				<br>
+				<input type="submit" name="Buscar/todo" value="Registros de la BD">
+			</form>
+
+	<form action="guardar.php" method="POST">
+		<p>Nombre</p>
+		<label for="nombre">Su nombre</label>
+		<br>
+		<input type="text" name="nombre" placeholder="Nombre" required>
+		<p>Email</p>
+		<label for="correo">Direccion De Correo</label>
+		<br>
+		<input type="email" name="correo" placeholder="alguien@algo.com" required>
+		<p>Mensaje</p>
+		<label for="mensaje">Su Mensaje</label>
+		<br>
+		<input type="text" name="mensaje" placeholder="Mensaje" required>
+		<br>
+		<br>
+		<p>Telefono</p>
+		<label for="telefono">Su numero</label>
+		<br>
+		<input type="text" name="telefono" placeholder="Telefono" required>
+		<br>
+		<p>Direccion</p>
+		<label for="direccion">Su direccion</label>
+		<br>
+		<input type="text" name="direccion" placeholder="Direccion" required>
+		<br>
+		<p>Fecha de nacimiento</p>
+		<label for="fechanacimiento">Fecha de nacimiento</label>
+		<br>
+		<input type="text" name="fechanacimiento" placeholder="dd/mm/aaaa" required>
+			<br>
+			<br>
+		<input type="submit" value="Enviar">
+	</form>
+</div>
+</body>
+</html>
